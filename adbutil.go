@@ -97,6 +97,21 @@ func main() {
 				}
 				fmt.Printf("Setting active device to %s", cmd[1])
 				activeDevice = requestedDevice
+			case "ls":
+				switch cmd[1] {
+				case "apk":
+					// List apks that CAN BE installed.
+					fmt.Println("ls apk not implemented.")
+				case "pkg":
+					// List packages that ARE installed.
+					fmt.Println("ls pkg not implemented.")
+				case "activity":
+					// List activities within packages that ARE installed.
+					fmt.Println("ls activity not implemented.")
+				default:
+					fmt.Println("ls option unrecognized.")
+					// Print list of apk, pkg, or activity.
+				}
 			case "install":
 				break
 			default:
