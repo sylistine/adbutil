@@ -17,3 +17,9 @@ When this tool is complete, the user should only have to run `adbutil.exe` and t
 - `run <activity>`
 - `stop <activity>`
 *as well as*, importantly, commands for setting 'working' values so that <apk>, <packageid>, and <activity> may be omitted.
+  
+# setup
+This project uses a vanilla go setup, and assumes that you already have adb in your PATH.
+
+In order to use this project, clone it into your %GOHOME%/src/ directory
+
